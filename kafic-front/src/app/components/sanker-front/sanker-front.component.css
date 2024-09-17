@@ -1,0 +1,39 @@
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    display: flex;
+    border: 3px solid black;
+}
+
+.card{
+    margin: 10px;
+}
+
+.nav-item{
+    display: flex;
+}
+
+.right_header{
+    color: #fff; 
+    position: absolute; 
+    top: 20px; 
+    right: 40px
+}
+
+.btnt{
+    color: #fff; 
+    position: absolute; 
+    top: 20px; 
+    right: 40px
+}
+
+.title{
+    color: #fff;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+}

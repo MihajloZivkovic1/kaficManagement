@@ -1,0 +1,29 @@
+
+<div class="nav-item mb-lg-0 " style="margin-top: 0px; margin-left: 7px;">
+  <p class="title">narudžbine</p>
+  <!-- <a  type="button" class="btn btnt btn-dark btn-sm right_header" [routerLink]="'/'">Izloguj se</a> -->
+  <a class="btn btnt btn-dark btn-lg">
+    <span class="glyphicon glyphicon-log-out"></span> Vrati se
+  </a>
+</div>
+
+<div class="container">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Piće</th>
+            <th scope="col">Količina</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of pica; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{p.naziv}}</td>
+            <td>{{p.kolicina}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>

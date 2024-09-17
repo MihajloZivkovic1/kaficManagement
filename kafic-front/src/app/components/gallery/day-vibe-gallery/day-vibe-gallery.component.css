@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 3rem;
+}
+
+.image{
+    display: block;
+    width: 100%;
+}
+
+.thumbnail:hover{
+    transform: translateY(-4px);
+}
+
+.image-container:hover{
+    opacity: 1;
+}

@@ -1,0 +1,27 @@
+.table{
+    margin-top: 90px;
+}
+
+.right_header{
+    color: #fff; 
+    position: absolute; 
+    top: 20px; 
+    right: 40px
+}
+
+.btnt{
+    color: #fff; 
+    position: absolute; 
+    top: 20px; 
+    right: 40px
+}
+
+.title{
+    color: #fff;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+}

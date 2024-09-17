@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<div class="row">
+    <div class="col-10">
+        <a *ngFor="let k of kategorije" 
+        [routerLink]="'/drink-menu'" 
+        [queryParams]="{ kategorije: k.kategorijaId}" 
+        class="list-group-item-action"
+        [class.active] = "kategorija === k.naziv"
+        >
+        {{k.naziv}}</a>
+    </div>
+</div>
+
+<div class="container mt-3 d-flex p-4 flex-wrap justify-content-around">
+    <div class="card" style="margin-top: 35px; width: 300px;" *ngFor="let pice of pica">
+        <img [src]="'/assets/' + pice.slika" id="slika-pica" alt="slika nije ucitana" class="card-img-top">
+        <div class="card-body">
+            <h4 class="card-title">{{pice.naziv}}</h4>
+            <h5 class="card-subtitle mb-2 text-muted"> Cena: {{pice.cena}} rsd</h5>
+            <p class="card-text">Opis: {{pice.opis}}</p>
+            <p class="card-text">
+                Kolicina: <input type="number" min="1" [max]="pice.kolicina" #kolicina [name]="pice.naziv" [id]="pice.piceId" style="width: 40px;"/>
+            </p> 
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-warning btn-sm" (click)="dodajUKorpu(pice, kolicina)">Dodaj u korpu</button>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

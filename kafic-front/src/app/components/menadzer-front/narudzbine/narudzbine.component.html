@@ -1,0 +1,52 @@
+
+
+<div class="bg-success">
+
+    <div class="nav-item mb-lg-0 " style="margin-top: 0px; margin-left: 7px;">
+        <p class="title">narudžbine</p>
+        <!-- <a  type="button" class="btn btn-dark btn-sm right_header" [routerLink]="'/'">Izloguj se</a> -->
+        <a class="btn btnt btn-dark btn-lg" [routerLink]="'/menadzer-front'">
+          <span class="glyphicon glyphicon-log-out"></span> Vrati se
+        </a>
+    </div>
+
+    <!-- <script>
+      function myFunction() {
+        let text = "Press a button!\nEither OK or Cancel.";
+        if (confirm(text) == true) {
+          text = "You pressed OK!";
+        } else {
+          text = "You canceled!";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+      </script> -->
+
+    <div class="container bg-dark flex-wrap justify-content-around">
+
+        <div class="card" style="width: 18rem;" *ngFor="let nar of narudzbine">
+            <div class="card-body">
+              <h5 class="card-title">Narudžbina broj: {{nar.narudzbinaId}}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Broj stola: {{nar.brStola}}</h6>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Datum: {{nar.datumNarudzbine | date}}</h6>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Naziv</th>
+                    <th scope="col">Kolicina</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of nar.pica">
+                    <td>{{p.naziv}}</td>
+                    <td>{{p.kolicina}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+

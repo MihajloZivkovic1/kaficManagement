@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<div style="min-height: 410px;">
+    <div class="container">
+        <h2 class="text-center mt-4 mb-4" >Pica koja ste izabrali</h2>
+        <table class="table mb-4 table-hover table-bordered text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Naziv</th>
+                    <th>Cena</th>
+                    <th>Kolicina</th>
+                    <th>Akcija</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pice of pica; let i = index"> 
+                    <td>{{pice.naziv}}</td>
+                    <td>{{pice.cena}}</td>
+                    <td>{{pice.kolicina}}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" (click)="izbaci(i)">Izbaci</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-end">    
+            <h4>Ukupna cena: {{ukupnaCena}} rsd</h4>
+        </div>
+        <div class="d-flex justify-content-end">    
+            <h4>Izaberite broj stola: </h4>
+            <select name="slobodanSto" id="slobodanSto" [(ngModel)] = "selectedOption">
+                <option *ngFor="let sto of stolovi" [value]="sto.brojStola">
+                    {{sto.brojStola}}
+                </option>
+            </select>
+        </div>
+        <div class="d-flex justify-content-end p-3">
+            <button class="btn btn-success btn-sm" (click)="poruci()">Poruci</button>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,170 @@
+ insert into stolovi (sto_id, broj_stola, status)
+ values (1, 1, 'slobodan');
+ insert into stolovi (sto_id, broj_stola, status)
+ values (2, 2, 'slobodan');
+ insert into stolovi (sto_id, broj_stola, status)
+ values (3, 3, 'slobodan');
+ insert into stolovi (sto_id, broj_stola, status)
+ values (4, 4, 'slobodan');
+ insert into stolovi (sto_id, broj_stola, status)
+ values (5, 5, 'slobodan');
+ insert into stolovi (sto_id, broj_stola, status)
+ values (6, 6, 'slobodan');
+ insert into stolovi (sto_id, broj_stola, status)
+ values (7, 7, 'slobodan');
+
+-- select * from kafic.stolovi;
+
+ insert into kategorijepica (kategorija_id, naziv)
+ values (1, 'Gazirani sokovi');
+ insert into kategorijepica (kategorija_id, naziv)
+ values (2, 'Prirodni sokovi');
+ insert into kategorijepica (kategorija_id, naziv)
+ values (3, 'Kafe');
+ insert into kategorijepica (kategorija_id, naziv)
+ values (4, 'Piva');
+ insert into kategorijepica (kategorija_id, naziv)
+ values (5, 'Zestoka pica');
+
+-- select * from kafic.kategorijepica;
+
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ values (1, 'Coca Cola', 250, 1, 'cocaCola.jpeg', 'Klasićni kola ukus.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ values (2, 'Coca Cola Zero', 250, 1, 'cocaColaZero.jpeg', 'Kola bez kalorija, isti ukus.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ values (3, 'Fanta', 250, 1, 'fanta.jpeg', 'Voćno, gazirano, osvežavajuće.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ values (4, 'Sprite', 250, 1, 'sprite.jpeg', 'Limun-limeta, čisto osveženje.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ values (5, 'Cockta', 250, 1, 'cockta.jpeg', 'Klasik sa gaziranim ukusom kafe.');
+
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (6, 'Jabuka', 230, 2, 'jabuka.jpeg', 'Svež, prirodan ukus jabuke.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (7, 'Jagoda', 230, 2, 'jagoda.jpeg', 'Slatko osveženje sa ukusom jagode');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (8, 'Breskva', 230, 2, 'breskva.jpeg', 'Blag i osvežavajući ukus breskve.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (9, 'Borovnica', 230, 2, 'borovnica.jpeg', 'Bogat, voćni ukus borovnice.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (10, 'Narandza', 230, 2, 'narandza.jpeg', 'Klasičan, sočan ukus narandže.');
+
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (11, 'Espresso', 195, 3, 'espresso.jpeg', 'Intenzivan i pun ukus.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (12, 'Cappuccino', 240, 3, 'cappuccino.jpeg', 'Kremasto, sa savršenim balansom.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (13, 'Macchiato', 230, 3, 'macchiato.jpeg', 'Espreso sa kapljicom mleka.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (14, 'Nescafe', 240, 3, 'nescafe.jpeg', 'Lagano, brzo pripremljeno osveženje.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (15, 'Domaća kafa', 180, 3, 'narandza.jpeg', 'Tradicionalno jaka i aromatična.');
+
+
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (16, 'Lav 0.33', 260, 4, 'lav.jpeg', 'Klasičan domaći lager.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (17, 'Zajećarsko 0,33', 260, 4, 'zajecarsko.jpeg', 'Tradicionalno, punog ukusa.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (18, 'Bavaria 0.25', 250, 4, 'bavaria.jpeg', 'Osvežavajuće, blago gorko.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (19, 'Stella Artoa 0.25', 260, 4, 'stella.jpeg', 'Lagano, sa bogatom aromom.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (20, 'Heineken 0.25', 280, 4, 'heineken.jpeg', 'Svetski poznat, savršeno izbalansiran.');
+
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (21, 'Jack Daniels', 340, 5, 'jackDaniels.jpeg', 'Svetski poznat, klasičan američki viski.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (22, 'Johnnie Walker', 330, 5, 'johnnieWalker.jpeg', 'Svetski poznat, prepoznatljiv škotski blend.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (23, 'Balantines', 330, 5, 'balantines.jpeg', 'Blago i uravnoteženo.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (24, 'Finlandia', 280, 5, 'finlandia.png', 'Čista i glatka votka.');
+ insert  into pice (pice_id, naziv, cena, kategorija_id, slika, opis)
+ VALUES (25, 'Bacardi', 280, 5, 'bacardi.jpeg', 'Lagani i osvežavajući rum.');
+
+ select * from kafic.pice;
+
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(1, 20, 1);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(2, 20, 2);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(3, 20, 3);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(4, 20, 4);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(5, 20, 5);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(6, 20, 6);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(7, 20, 7);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(8, 20, 8);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(9, 20, 9);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(10, 20, 10);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(11, 20, 11);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(12, 20, 12);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(13, 20, 13);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(14, 20, 14);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(15, 20, 15);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(16, 20, 16);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(17, 20, 17);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(18, 20, 18);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(19, 20, 19);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(20, 20, 20);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(21, 20, 21);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(22, 20, 22);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(23, 20, 23);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(24, 20, 24);
+ insert into magacin (magacin_id, kolicina, pice_pice_id)
+ values(25, 20, 25);
+
+ select * from kafic.magacin;
+
+ insert into zaposleni (zaposleni_id, ime, prezime, uloga)
+ values (1, 'Marko', 'Markovic', 'sanker');
+-- insert into zaposleni (zaposleni_id, ime, prezime, uloga)
+-- values (2, 'Milos', 'Milosevic', 'sanker');
+-- insert into zaposleni (zaposleni_id, ime, prezime, uloga)
+-- values (3, 'Nikola', 'Nikolic', 'menadzer');
+
+-- select * from kafic.zaposleni;
+
+-- ALTER TABLE zaposleni
+-- ADD COLUMN username VARCHAR(255),
+-- ADD COLUMN password VARCHAR(255);
+
+-- select * from kafic.zaposleni;
+
+-- UPDATE zaposleni
+-- SET username = 'maremare', password = 'mare123'
+-- WHERE zaposleni_id = 1;
+
+-- UPDATE zaposleni
+-- SET username = 'milemile', password = 'mile123'
+-- WHERE zaposleni_id = 2;
+
+-- UPDATE zaposleni
+-- SET username = 'niknik', password = 'nik123'
+-- WHERE zaposleni_id = 3;
+
+-- select * from kafic.zaposleni;
+
